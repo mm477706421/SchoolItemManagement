@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>979</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;
+
+QButton{
+color: white;
+background-color: #48c9b0;
+border-color: #48c9b0;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+border: 2px solid #bdc3c7;
+display: block;
+width: 100%;
+float: left;
+margin: 2px 0 2px;
+font: 9pt &quot;黑体&quot;;
+font-size: 11px;
+padding-top: 5px;
+padding-bottom: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QListWidget" name="listWidget">
+      <property name="maximumSize">
+       <size>
+        <width>130</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string/>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <widget class="QPushButton" name="getNoticeBtn_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>70</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: white;
+background-color: #48c9b0;
+border-color: #48c9b0;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+border: 2px solid #bdc3c7;
+display: block;
+width: 100%;
+float: left;
+margin: 2px 0 2px;
+font: 9pt &quot;黑体&quot;;
+font-size: 11px;
+padding-top: 5px;
+padding-bottom: 5px;</string>
+                    </property>
+                    <property name="text">
+                     <string>查询</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="loginStatus_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="submitBtn_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: white;
+background-color: #48c9b0;
+border-color: #48c9b0;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+border: 2px solid #bdc3c7;
+display: block;
+width: 100%;
+float: left;
+margin: 2px 0 2px;
+font: 9pt &quot;黑体&quot;;
+font-size: 11px;
+padding-top: 5px;
+padding-bottom: 5px;</string>
+                    </property>
+                    <property name="text">
+                     <string>发布</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="loginBtn_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: white;
+background-color: #48c9b0;
+border-color: #48c9b0;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+border: 2px solid #bdc3c7;
+display: block;
+width: 100%;
+float: left;
+margin: 2px 0 2px;
+font: 9pt &quot;黑体&quot;;
+font-size: 11px;
+padding-top: 5px;
+padding-bottom: 5px;</string>
+                    </property>
+                    <property name="text">
+                     <string>登录</string>
+                    </property>
+                    <property name="autoDefault">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="registeBtn_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: white;
+background-color: #48c9b0;
+border-color: #48c9b0;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+border: 2px solid #bdc3c7;
+display: block;
+width: 100%;
+float: left;
+margin: 2px 0 2px;
+font: 9pt &quot;黑体&quot;;
+font-size: 11px;
+padding-top: 5px;
+padding-bottom: 5px;</string>
+                    </property>
+                    <property name="text">
+                     <string>注册</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_2">
+                  <property name="maximumSize">
+                   <size>
+                    <width>300</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 2px solid #bdc3c7;
+color: #34495e;
+font-family: &quot;Lato&quot;, Helvetica, Arial, sans-serif;
+font-size: 15px;
+height: 100%;
+border-radius: 6px;
+box-shadow: none;
+background-color: #fff;
+background-clip: padding-box;
+display: block;
+width: 100%;
+text-align: left;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="searchBtn_2">
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: white;
+background-color: #48c9b0;
+border-color: #48c9b0;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+border: 2px solid #bdc3c7;
+display: block;
+width: 100%;
+float: left;
+margin: 2px 0 2px;
+font: 9pt &quot;黑体&quot;;
+font-size: 11px;
+padding-top: 5px;
+padding-bottom: 5px;</string>
+                  </property>
+                  <property name="text">
+                   <string>搜索</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableView" name="tableView">
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #bdc3c7;
+color: #34495e;
+font-family: &quot;Lato&quot;, Helvetica, Arial, sans-serif;
+font-size: 15px;
+height: 100%;
+border-radius: 6px;
+box-shadow: none;
+background-color: #fff;
+background-clip: padding-box;
+display: block;
+width: 100%;
+text-align: left;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>Tab 2</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBox"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2"/>
+      <widget class="QWidget" name="page_3"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

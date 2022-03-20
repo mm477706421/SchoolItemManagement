@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QDialog" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>242</width>
+    <height>188</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #fff;
+border-radius: 9px;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin: 2px 0 0;
+font: 14pt &quot;黑体&quot;;
+color: #343a40;</string>
+         </property>
+         <property name="text">
+          <string>账号登陆</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">float: left;
+margin: 2px 0 0;
+font: 9pt &quot;黑体&quot;;
+font-size: 11px;
+line-height: 1.4;
+padding-top: 5px;
+width: 50%;
+color: #34495e;</string>
+         </property>
+         <property name="text">
+          <string>账号</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="userNameLineEdit">
+         <property name="styleSheet">
+          <string notr="true">border: 2px solid #bdc3c7;
+color: #34495e;
+font-family: &quot;Lato&quot;, Helvetica, Arial, sans-serif;
+font-size: 15px;
+height: 30px;
+border-radius: 6px;
+box-shadow: none;
+background-color: #fff;
+background-clip: padding-box;
+display: block;
+width: 100%;
+text-align: left;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">float: left;
+margin: 2px 0 0;
+font: 9pt &quot;黑体&quot;;
+font-size: 11px;
+line-height: 1.4;
+padding-top: 5px;
+width: 50%;
+color: #34495e;</string>
+         </property>
+         <property name="text">
+          <string>密码</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="passWordLineEdit">
+         <property name="styleSheet">
+          <string notr="true">border: 2px solid #bdc3c7;
+color: #34495e;
+font-family: &quot;Lato&quot;, Helvetica, Arial, sans-serif;
+font-size: 15px;
+height: 30px;
+border-radius: 6px;
+box-shadow: none;
+background-color: #fff;
+background-clip: padding-box;
+display: block;
+width: 100%;
+text-align: left;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="styleSheet">
+      <string notr="true">color: white;
+background-color: #48c9b0;
+border-color: #48c9b0;
+font-size: 17px;
+border-radius: 6px;
+font-weight: normal;
+border: none;
+border: 2px solid #bdc3c7;
+display: block;
+width: 100%;
+float: left;
+margin: 2px 0 2px;
+font: 9pt &quot;黑体&quot;;
+font-size: 11px;
+padding-top: 5px;
+padding-bottom: 5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Close|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Login</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Login</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
